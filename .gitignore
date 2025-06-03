@@ -1,0 +1,57 @@
+# Hugo build output
+public/
+docs/
+
+# Hugo cache
+/resources/_gen/
+assets/jsconfig.json
+
+# Logs and temp files
+*.log
+*.DS_Store
+*.swp
+*.swo
+Thumbs.db
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# Hugo config backup
+config.yaml
+config.json
+
+# VSCode, JetBrains IDEs
+.vscode/
+.idea/
+
+# System
+*.log
+*.DS_Store
+*.swp
+*.swo
+Thumbs.db
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+# Hugo
+*.exe
+*.test
+
