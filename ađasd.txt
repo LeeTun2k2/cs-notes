@@ -1,0 +1,20 @@
+1. Deduplicate a 1TB CSV file with 8GB RAM
+=> Làm sao loại bỏ dòng trùng lặp mà không quá tải bộ nhớ?
+
+2. Join two 500GB files by a key with limited RAM
+=> Giống SQL JOIN, nhưng phải làm thủ công qua stream hoặc external sort.
+
+3. Count frequency of each word in a 2TB text corpus
+=> Hashmap không đủ RAM — dùng gì để đếm?
+
+4. Find top 100 most frequent users in a 300GB log file
+=> Không giữ toàn bộ map trong RAM, phải approximate hoặc external counting.
+
+5. Find all IPs that accessed service A but not service B
+=> So sánh 2 large sets, cần dùng bloom filter hoặc external sort?
+
+6. Detect duplicate images in a 5TB dataset
+=> Hashing hình ảnh, so sánh theo perceptual hash, xử lý phân tán?
+
+7. Backfill missing user IDs in a 1.5TB event log using a 50GB mapping file
+=> Map quá lớn để load lên, cần external join theo key.
